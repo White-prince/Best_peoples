@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Best peoples</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="libs/gsap.min.js" defer></script>
+	<script src="libs/Draggable.min.js" defer></script>
+	<script src="libs/InertiaPlugin.min.js" defer></script>
+	<script src="js/app.js" defer></script>
+	<style>
+		.gallery { opacity: 0; }
+	</style>
+</head>
+<body>
+    <h1 class="header">Best peoples <span>Loading...</span></h1>
+	<div class="gallery">
+		<div class="gallery__item"><a href=""><img src="images/1.jpg" alt="Татьяна"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/2.jpg" alt="Владимер"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/3.jpg" alt="Владислав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/4.jpg" alt="Арсений"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/5.jpg" alt="Алексей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/6.jpg" alt="Максим"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/7.jpg" alt="Багдан"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/8.jpg" alt="Вова"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/9.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/10.jpg" alt="Илья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/11.jpg" alt="Андрей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/12.jpg" alt="Владеслав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/13.jpg" alt="Лера"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/14.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/15.jpg" alt="Слава"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/16.jpg" alt="Дарья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/17.jpg" alt="Настя"></a></div>
+        <div class="gallery__item"><a href=""><img src="images/18.jpg" alt="Денис"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/19.jpg" alt="Никита"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/20.jpg" alt="Настя"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/1.jpg" alt="Татьяна"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/2.jpg" alt="Владимер"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/3.jpg" alt="Владислав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/4.jpg" alt="Арсений"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/5.jpg" alt="Алексей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/6.jpg" alt="Максим"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/7.jpg" alt="Багдан"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/8.jpg" alt="Вова"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/9.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/10.jpg" alt="Илья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/11.jpg" alt="Андрей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/12.jpg" alt="Владеслав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/13.jpg" alt="Лера"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/14.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/15.jpg" alt="Слава"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/16.jpg" alt="Дарья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/17.jpg" alt="Настя"></a></div>
+        <div class="gallery__item"><a href=""><img src="images/18.jpg" alt="Денис"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/19.jpg" alt="Никита"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/20.jpg" alt="Настя"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/1.jpg" alt="Татьяна"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/2.jpg" alt="Владимер"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/3.jpg" alt="Владислав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/4.jpg" alt="Арсений"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/5.jpg" alt="Алексей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/6.jpg" alt="Максим"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/7.jpg" alt="Багдан"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/8.jpg" alt="Вова"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/9.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/10.jpg" alt="Илья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/11.jpg" alt="Андрей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/12.jpg" alt="Владеслав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/13.jpg" alt="Лера"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/14.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/15.jpg" alt="Слава"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/16.jpg" alt="Дарья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/17.jpg" alt="Настя"></a></div>
+        <div class="gallery__item"><a href=""><img src="images/18.jpg" alt="Денис"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/19.jpg" alt="Никита"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/20.jpg" alt="Настя"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/1.jpg" alt="Татьяна"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/2.jpg" alt="Владимер"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/3.jpg" alt="Владислав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/4.jpg" alt="Арсений"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/5.jpg" alt="Алексей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/6.jpg" alt="Максим"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/7.jpg" alt="Багдан"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/8.jpg" alt="Вова"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/9.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/10.jpg" alt="Илья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/11.jpg" alt="Андрей"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/12.jpg" alt="Владеслав"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/13.jpg" alt="Лера"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/14.jpg" alt="Александра"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/15.jpg" alt="Слава"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/16.jpg" alt="Дарья"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/17.jpg" alt="Настя"></a></div>
+        <div class="gallery__item"><a href=""><img src="images/18.jpg" alt="Денис"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/19.jpg" alt="Никита"></a></div>
+		<div class="gallery__item"><a href=""><img src="images/20.jpg" alt="Настя"></a></div>
+</body>
+</html>
