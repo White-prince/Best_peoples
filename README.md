@@ -20,6 +20,6 @@ This site was created for the Best peoples.
 
 ## Preview :desktop_computer:
 
-[![Webpage]("https://i.ibb.co/KLSt6WR/photo-2022-05-09-13-34-41.jpg")]()
+[![Webpage](https://i.ibb.co/KLSt6WR/photo-2022-05-09-13-34-41.jpg)]()
 
 Hope this code helps you :crown:
