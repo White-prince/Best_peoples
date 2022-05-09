@@ -10,96 +10,581 @@
 	<script src="libs/Draggable.min.js" defer></script>
 	<script src="libs/InertiaPlugin.min.js" defer></script>
 	<script src="js/app.js" defer></script>
-	<script src="js/openses.js" defer></script>
+	<script src="magnific-popup/libs/jquery/jquery.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/open.js"></script>
 	<style>
-		.gallery { opacity: 0; }
+		.gallery {
+			opacity: 0;
+		}
+		.content{
+			margin-top: 100px;
+		}
 	</style>
 </head>
 <body>
     <h1 class="header">Best peoples <span>Loading...</span></h1>
 	<div class="gallery">
-		<div class="gallery__item" onclick="location.href='images/21.png';"><img src="images/1.jpg" alt="Татьяна"></div>
-		<div class="gallery__item"><img src="images/2.jpg" alt="Владимер"></div>
-		<div class="gallery__item"><img src="images/3.jpg" alt="Владислав"></div>
-		<div class="gallery__item"><img src="images/4.jpg" alt="Арсений"></div>
-		<div class="gallery__item"><img src="images/5.jpg" alt="Алексей"></div>
-		<div class="gallery__item"><img src="images/6.jpg" alt="Максим"></div>
-		<div class="gallery__item"><img src="images/7.jpg" alt="Багдан"></div>
-		<div class="gallery__item"><img src="images/8.jpg" alt="Вова"></div>
-		<div class="gallery__item"><img src="images/9.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/10.jpg" alt="Илья"></div>
-		<div class="gallery__item"><img src="images/11.jpg" alt="Андрей"></div>
-		<div class="gallery__item"><img src="images/12.jpg" alt="Владеслав"></div>
-		<div class="gallery__item"><img src="images/13.jpg" alt="Лера"></div>
-		<div class="gallery__item"><img src="images/14.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/15.jpg" alt="Слава"></div>
-		<div class="gallery__item"><img src="images/16.jpg" alt="Дарья"></div>
-		<div class="gallery__item"><img src="images/17.jpg" alt="Александра"></div>
-        <div class="gallery__item"><img src="images/18.jpg" alt="Денис"></div>
-		<div class="gallery__item"><img src="images/19.jpg" alt="Никита"></div>
-		<div class="gallery__item"><img src="images/20.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/1.jpg" alt="Татьяна"></div>
-		<div class="gallery__item"><img src="images/2.jpg" alt="Владимер"></div>
-		<div class="gallery__item"><img src="images/3.jpg" alt="Владислав"></div>
-		<div class="gallery__item"><img src="images/4.jpg" alt="Арсений"></div>
-		<div class="gallery__item"><img src="images/5.jpg" alt="Алексей"></div>
-		<div class="gallery__item"><img src="images/6.jpg" alt="Максим"></div>
-		<div class="gallery__item"><img src="images/7.jpg" alt="Багдан"></div>
-		<div class="gallery__item"><img src="images/8.jpg" alt="Вова"></div>
-		<div class="gallery__item"><img src="images/9.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/10.jpg" alt="Илья"></div>
-		<div class="gallery__item"><img src="images/11.jpg" alt="Андрей"></div>
-		<div class="gallery__item"><img src="images/12.jpg" alt="Владеслав"></div>
-		<div class="gallery__item"><img src="images/13.jpg" alt="Лера"></div>
-		<div class="gallery__item"><img src="images/14.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/15.jpg" alt="Слава"></div>
-		<div class="gallery__item"><img src="images/16.jpg" alt="Дарья"></div>
-		<div class="gallery__item"><img src="images/17.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/18.jpg" alt="Денис"></div>
-		<div class="gallery__item"><img src="images/19.jpg" alt="Никита"></div>
-		<div class="gallery__item"><img src="images/20.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/1.jpg" alt="Татьяна"></div>
-		<div class="gallery__item"><img src="images/2.jpg" alt="Владимер"></div>
-		<div class="gallery__item"><img src="images/3.jpg" alt="Владислав"></div>
-		<div class="gallery__item"><img src="images/4.jpg" alt="Арсений"></div>
-		<div class="gallery__item"><img src="images/5.jpg" alt="Алексей"></div>
-		<div class="gallery__item"><img src="images/6.jpg" alt="Максим"></div>
-		<div class="gallery__item"><img src="images/7.jpg" alt="Багдан"></div>
-		<div class="gallery__item"><img src="images/8.jpg" alt="Вова"></div>
-		<div class="gallery__item"><img src="images/9.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/10.jpg" alt="Илья"></div>
-		<div class="gallery__item"><img src="images/11.jpg" alt="Андрей"></div>
-		<div class="gallery__item"><img src="images/12.jpg" alt="Владеслав"></div>
-		<div class="gallery__item"><img src="images/13.jpg" alt="Лера"></div>
-		<div class="gallery__item"><img src="images/14.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/15.jpg" alt="Слава"></div>
-		<div class="gallery__item"><img src="images/16.jpg" alt="Дарья"></div>
-		<div class="gallery__item"><img src="images/17.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/18.jpg" alt="Денис"></div>
-		<div class="gallery__item"><img src="images/19.jpg" alt="Никита"></div>
-		<div class="gallery__item"><img src="images/20.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/1.jpg" alt="Татьяна"></div>
-		<div class="gallery__item"><img src="images/2.jpg" alt="Владимер"></div>
-		<div class="gallery__item"><img src="images/3.jpg" alt="Владислав"></div>
-		<div class="gallery__item"><img src="images/4.jpg" alt="Арсений"></div>
-		<div class="gallery__item"><img src="images/5.jpg" alt="Алексей"></div>
-		<div class="gallery__item"><img src="images/6.jpg" alt="Максим"></div>
-		<div class="gallery__item"><img src="images/7.jpg" alt="Багдан"></div>
-		<div class="gallery__item"><img src="images/8.jpg" alt="Вова"></div>
-		<div class="gallery__item"><img src="images/9.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/10.jpg" alt="Илья"></div>
-		<div class="gallery__item"><img src="images/11.jpg" alt="Андрей"></div>
-		<div class="gallery__item"><img src="images/12.jpg" alt="Владеслав"></div>
-		<div class="gallery__item"><img src="images/13.jpg" alt="Лера"></div>
-		<div class="gallery__item"><img src="images/14.jpg" alt="Александра"></div>
-		<div class="gallery__item"><img src="images/15.jpg" alt="Слава"></div>
-		<div class="gallery__item"><img src="images/16.jpg" alt="Дарья"></div>
-		<div class="gallery__item"><img src="images/17.jpg" alt="Настя"></div>
-		<div class="gallery__item"><img src="images/18.jpg" alt="Денис"></div>
-		<div class="gallery__item"><img src="images/19.jpg" alt="Никита"></div>
-		<div class="gallery__item"><img src="images/20.jpg" alt="Настя"></div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/1.jpg" alt="Татьяна"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/2.jpg" alt="Владимер"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/3.jpg" alt="Владислав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/4.jpg" alt="Арсений"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/5.jpg" alt="Алексей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/6.jpg" alt="Максим"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/7.jpg" alt="Багдан"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/8.jpg" alt="Вова"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/9.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/10.jpg" alt="Илья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/11.jpg" alt="Андрей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/12.jpg" alt="Владеслав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/13.jpg" alt="Лера"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/14.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/15.jpg" alt="Слава"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/16.jpg" alt="Дарья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/17.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/18.jpg" alt="Денис"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/19.jpg" alt="Никита"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/20.jpg" alt="Настя"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/1.jpg" alt="Татьяна"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/2.jpg" alt="Владимер"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/3.jpg" alt="Владислав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/4.jpg" alt="Арсений"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/5.jpg" alt="Алексей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/6.jpg" alt="Максим"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/7.jpg" alt="Багдан"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/8.jpg" alt="Вова"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/9.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/10.jpg" alt="Илья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/11.jpg" alt="Андрей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/12.jpg" alt="Владеслав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/13.jpg" alt="Лера"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/14.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/15.jpg" alt="Слава"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/16.jpg" alt="Дарья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/17.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/18.jpg" alt="Денис"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/19.jpg" alt="Никита"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/20.jpg" alt="Настя"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/1.jpg" alt="Татьяна"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/2.jpg" alt="Владимер"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/3.jpg" alt="Владислав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/4.jpg" alt="Арсений"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/5.jpg" alt="Алексей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/6.jpg" alt="Максим"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/7.jpg" alt="Багдан"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/8.jpg" alt="Вова"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/9.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/10.jpg" alt="Илья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/11.jpg" alt="Андрей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/12.jpg" alt="Владеслав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/13.jpg" alt="Лера"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/14.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/15.jpg" alt="Слава"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/16.jpg" alt="Дарья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/17.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/18.jpg" alt="Денис"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/19.jpg" alt="Никита"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/20.jpg" alt="Настя"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/1.jpg" alt="Татьяна"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/2.jpg" alt="Владимер"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/3.jpg" alt="Владислав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/4.jpg" alt="Арсений"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/5.jpg" alt="Алексей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/6.jpg" alt="Максим"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/7.jpg" alt="Багдан"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/8.jpg" alt="Вова"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/9.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/10.jpg" alt="Илья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/11.jpg" alt="Андрей"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/12.jpg" alt="Владеслав"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/13.jpg" alt="Лера"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/14.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/15.jpg" alt="Слава"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/16.jpg" alt="Дарья"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/17.jpg" alt="Александра"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/18.jpg" alt="Денис"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/19.jpg" alt="Никита"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="popup-link">
+					<div class="gallery__item"><a class="popup-link" href="images/20.1.png"><img src="images/20.jpg" alt="Настя"></a></div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<a class="simple-ajax-popup-align-top" href="site-assets/ajax/test-ajax.html">Load content via ajax</a><br>
-	<a class="simple-ajax-popup" href="site-assets/ajax/test-ajax-2.html">Load another content via ajax</a>
 </body>
 </html>
