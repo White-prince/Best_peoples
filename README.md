@@ -22,4 +22,10 @@ This site was created for the Best peoples.
 
 [![Webpage](https://i.ibb.co/KLSt6WR/photo-2022-05-09-13-34-41.jpg)]()
 
+## Usege :information_source:
+
+To start:
+    
+Open index.html
+
 Hope this code helps you :crown:
